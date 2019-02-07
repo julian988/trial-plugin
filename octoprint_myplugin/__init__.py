@@ -58,7 +58,7 @@ class myplugin(octoprint.plugin.StartupPlugin,
                 # version check: github repository
                 type="github_release",
 		user="",
-                repo="OctoPrint-myplugin",
+                repo="octoPrint-myplugin",
                 current=self._plugin_version,
 
                 # update method: pip w/ dependency links
