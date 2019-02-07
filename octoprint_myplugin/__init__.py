@@ -30,13 +30,13 @@ class myplugin(octoprint.plugin.StartupPlugin,
 
 
     def get_api_commands(self):
-	self._logger.info("Manually triggered Camera get_api")
+	self._logger.info("Manually triggered get_api")
 	return dict(turnOn=["ip"])
 
 
     def on_api_commands(self, command, data):
 	if command == 'turnOn':
-		self._logger.info("Manually triggered Camera!")
+		self._logger.info("Manually triggered!")
 
     def get_template_configs(self):
         return [
