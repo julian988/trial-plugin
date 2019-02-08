@@ -7,7 +7,8 @@ $(function() {
 	      url: /api/plugin/octoprint_myplugin,
 	      type: "POST",
 	      dataType: "json",
-	      data: JSON.stringify(data),command: "turnOn",ip: data.ip()}),
+	      data: JSON.stringify(data),command: "turnOn",ip: data.ip()
+	         }),
 	  contentType: "application/json"
 	  });
     };
